@@ -9,7 +9,7 @@ root.geometry('700x900')
 root.config(bg='#fab6fa')
 root.resizable(width=False, height=False)
 
-pillow_image = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\one.png")
+pillow_image = Image.open("D:\Documents\IT-Elective\pics\one.png")
 pillow_image = pillow_image.resize((700,200))
 image = ImageTk.PhotoImage(pillow_image)
 
@@ -22,21 +22,21 @@ button.pack(side=tk.TOP,anchor=tk.NE, padx=10, pady=10)
 
 
 
-a1 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\two.png")
+a1 = Image.open("D:\Documents\IT-Elective\pics\\two.png")
 a1 = a1.resize((140,80))
 image1 = ImageTk.PhotoImage(a1)
 
 label1 = tk.Label(root, image = image1, borderwidth=1, relief='solid')
 label1.place(x=225,y=260)
 
-a2 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\three.png")
+a2 = Image.open("D:\Documents\IT-Elective\pics\\three.png")
 a2 = a2.resize((140,80))
 image2 = ImageTk.PhotoImage(a2)
 
 label2 = tk.Label(root, image = image2, borderwidth=1, relief='solid')
 label2.place(x=390,y=260)
 
-a3 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\four.png")
+a3 = Image.open("D:\Documents\IT-Elective\pics\\four.png")
 a3 = a3.resize((140,80))
 image3 = ImageTk.PhotoImage(a3)
 
@@ -46,21 +46,21 @@ label3.place(x=550,y=260)
 
 
 
-a4 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\5.png")
+a4 = Image.open("D:\Documents\IT-Elective\pics\\5.png")
 a4 = a4.resize((140,80))
 image4 = ImageTk.PhotoImage(a4)
 
 label4 = tk.Label(root, image = image4, borderwidth=1, relief='solid')
 label4.place(x=225,y=360)
 
-a5 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\six.png")
+a5 = Image.open("D:\Documents\IT-Elective\pics\six.png")
 a5 = a5.resize((140,80))
 image5 = ImageTk.PhotoImage(a5)
 
 label5 = tk.Label(root, image = image5, borderwidth=1, relief='solid')
 label5.place(x=390,y=360)
 
-a6 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\seven.png")
+a6 = Image.open("D:\Documents\IT-Elective\pics\seven.png")
 a6 = a6.resize((140,80))
 image6 = ImageTk.PhotoImage(a6)
 
@@ -70,21 +70,21 @@ label6.place(x=550,y=360)
 
 
 
-a7 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\eight.png")
+a7 = Image.open("D:\Documents\IT-Elective\pics\eight.png")
 a7 = a7.resize((140,80))
 image7 = ImageTk.PhotoImage(a7)
 
 label7 = tk.Label(root, image = image7, borderwidth=1, relief='solid')
 label7.place(x=225,y=460)
 
-a8 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\nine.png")
+a8 = Image.open("D:\Documents\IT-Elective\pics\\nine.png")
 a8 = a8.resize((140,80))
 image8 = ImageTk.PhotoImage(a8)
 
 label8 = tk.Label(root, image = image8, borderwidth=1, relief='solid')
 label8.place(x=390,y=460)
 
-a9 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\ten.png")
+a9 = Image.open("D:\Documents\IT-Elective\pics\\ten.png")
 a9 = a9.resize((140,80))
 image9 = ImageTk.PhotoImage(a9)
 
@@ -96,21 +96,21 @@ label9.place(x=550,y=460)
 
 
 
-a10 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\eleven.png")
+a10 = Image.open("D:\Documents\IT-Elective\pics\eleven.png")
 a10 = a10.resize((140,90))
 image10 = ImageTk.PhotoImage(a10)
 
 label10 = tk.Label(root, image = image10, borderwidth=1, relief='solid')
 label10.place(x=225,y=560)
 
-a11 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\twelve.png")
+a11 = Image.open("D:\Documents\IT-Elective\pics\\twelve.png")
 a11 = a11.resize((140,90))
 image11 = ImageTk.PhotoImage(a11)
 
 label11 = tk.Label(root, image = image11, borderwidth=1, relief='solid')
 label11.place(x=390,y=560)
 
-a12 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\thirteen.png")
+a12 = Image.open("D:\Documents\IT-Elective\pics\\thirteen.png")
 a12 = a12.resize((140,90))
 image12 = ImageTk.PhotoImage(a12)
 
@@ -120,14 +120,14 @@ label12.place(x=550,y=560)
 
 
 
-a13 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\fourtheen.png")
+a13 = Image.open("D:\Documents\IT-Elective\pics\\fourtheen.png")
 a13 = a13.resize((140,90))
 image13 = ImageTk.PhotoImage(a13)
 
 label13 = tk.Label(root, image = image13, borderwidth=1, relief='solid')
 label13.place(x=225,y=670)
 
-a14 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\fiftheen.png")
+a14 = Image.open("D:\Documents\IT-Elective\pics\\fiftheen.png")
 a14 = a14.resize((140,90))
 image14 = ImageTk.PhotoImage(a14)
 
@@ -135,7 +135,7 @@ label14 = tk.Label(root, image = image14, borderwidth=1, relief='solid')
 label14.place(x=390,y=670)
 
 
-a15 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\sixtheen.png")
+a15 = Image.open("D:\Documents\IT-Elective\pics\sixtheen.png")
 a15 = a15.resize((140,90))
 image15 = ImageTk.PhotoImage(a15)
 
@@ -163,14 +163,14 @@ quantity = tk.Label(root, text='QUANTITY', background='#fab6fa',font=('Inter', 1
 quantity.place(x=100,y=820)
 
 
-a17 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\plus.png")
+a17 = Image.open("D:\Documents\IT-Elective\pics\plus.png")
 a17 = a17.resize((28,28))
 image17 = ImageTk.PhotoImage(a17)
 
 label17 = tk.Label(root, image = image17, borderwidth=0, relief='solid')
 label17.place(x=120,y=850)
 
-a18 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\minus.png")
+a18 = Image.open("D:\Documents\IT-Elective\pics\minus.png")
 a18 = a18.resize((28,28))
 image18 = ImageTk.PhotoImage(a18)
 

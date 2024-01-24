@@ -10,7 +10,7 @@ root.geometry('700x900')
 root.config(bg='#fab6fa')
 root.resizable(width=False, height=False)
 
-pillow_image = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\one.png")
+pillow_image = Image.open("D:\Documents\IT-Elective\pics\one.png")
 pillow_image = pillow_image.resize((500,200))
 image = ImageTk.PhotoImage(pillow_image)
 
@@ -27,7 +27,7 @@ frame1 = tk.Frame(root, width=450, height=170, bg='WHITE',borderwidth=2, relief=
 frame1.pack(padx=20,pady=20)
 
 
-l1 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\dashed.png")
+l1 = Image.open("D:\Documents\IT-Elective\pics\dashed.png")
 l1 = l1.resize((446,20))
 image1 = ImageTk.PhotoImage(l1)
 
@@ -43,7 +43,7 @@ text3.place(x=135,y=380)
 text4 = tk.Label(root,text='* No ice', font=('Inter', 14, 'bold'), bg='WHITE')
 text4.place(x=150,y=405)
 
-l2 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\dashed.png")
+l2 = Image.open("D:\Documents\IT-Elective\pics\dashed.png")
 l2 = l2.resize((446,20))
 image2 = ImageTk.PhotoImage(l2)
 
@@ -56,7 +56,7 @@ button2 = tk.Button(root, text='Edit', font=('inter', 11, 'bold'), background='#
 button2.place(x=450,y=453)
 
 
-a18 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\minus.png")
+a18 = Image.open("D:\Documents\IT-Elective\pics\minus.png")
 a18 = a18.resize((28,28))
 image18 = ImageTk.PhotoImage(a18)
 
@@ -66,7 +66,7 @@ label18.place(x=300,y=455)
 quantity1 = tk.Label(root, text='01', background='WHITE',font=('Inter', 10, 'bold'), borderwidth=1, relief='solid',padx=12, pady=4)
 quantity1.place(x=335,y=456)
 
-a17 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\plus.png")
+a17 = Image.open("D:\Documents\IT-Elective\pics\plus.png")
 a17 = a17.resize((28,28))
 image17 = ImageTk.PhotoImage(a17)
 
@@ -84,14 +84,14 @@ text6 = tk.Label(root,text='PHP 109.00', font=('Inter', 14, 'bold'), bg='WHITE')
 text6.place(x=450,y=545)
 
 
-l3 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\dashed.png")
+l3 = Image.open("D:\Documents\IT-Elective\pics\dashed.png")
 l3 = l2.resize((446,20))
 image3 = ImageTk.PhotoImage(l3)
 
 label3 = tk.Label(root, image = image3, borderwidth=0, bg="WHITE")
 label3.place(x=127,y=570)
 
-l4 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\dashed.png")
+l4 = Image.open("D:\Documents\IT-Elective\pics\dashed.png")
 l4 = l4.resize((446,20))
 image4 = ImageTk.PhotoImage(l4)
 
@@ -104,7 +104,7 @@ button2 = tk.Button(root, text='Edit', font=('inter', 11, 'bold'), background='#
 button2.place(x=450,y=663)
 
 
-a19 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\minus.png")
+a19 = Image.open("D:\Documents\IT-Elective\pics\minus.png")
 a19 = a19.resize((28,28))
 image19 = ImageTk.PhotoImage(a19)
 
@@ -114,7 +114,7 @@ label19.place(x=300,y=665)
 quantity1 = tk.Label(root, text='01', background='WHITE',font=('Inter', 10, 'bold'), borderwidth=1, relief='solid',padx=12, pady=4)
 quantity1.place(x=335,y=666)
 
-a20 = Image.open("C:\\Users\\jimwell\\OneDrive\\Desktop\\Python Proj\\plus.png")
+a20 = Image.open("D:\Documents\IT-Elective\pics\plus.png")
 a20 = a20.resize((28,28))
 image20 = ImageTk.PhotoImage(a20)
 
