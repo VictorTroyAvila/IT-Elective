@@ -4,11 +4,6 @@ from testfile import test
 from PIL import Image, ImageTk
 from tkinter import ttk
 
-def switch():
-    open('cart.py', 'r')
-    root.destroy
-    
-
 root = tk.Tk()
 
 root.title('Kiosk')
