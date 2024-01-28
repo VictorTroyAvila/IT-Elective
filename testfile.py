@@ -26,10 +26,7 @@ class Extra(tk.Toplevel):
         label = tk.Label(cart, image = image, borderwidth=0)
         label.pack(padx=10, pady=24)
 
-        # Label(cart,text='* No ice', font=('Inter', 14, 'bold'), bg='WHITE')
-        # text4.place(x=150,y=405)
-
-        # l2 = Image# italic_font = font.Font(family="Inter", size=20, slant="italic")
+        italic_font = font.Font(family="Inter", size=20, slant="italic")
 
         titletext = tk.Label(cart,text='REVIEW MY ORDER', font=('Inter', 20, 'bold','italic'), bg='#fab6fa')
         titletext.pack(padx=10,pady=10)
@@ -52,7 +49,10 @@ class Extra(tk.Toplevel):
         text2.place(x=450,y=335)
         text3 = tk.Label(cart,text='Medium Coke 16oz', font=('Inter', 14, 'bold'), bg='WHITE')
         text3.place(x=135,y=380)
-        text4 = tk.open("D:\Documents\IT-Elective\pics\dashed.png")
+        text4 = tk.Label(cart,text='* No ice', font=('Inter', 14, 'bold'), bg='WHITE')
+        text4.place(x=150,y=405)
+
+        l2 = Image.open("D:\Documents\IT-Elective\pics\dashed.png")
         l2 = l2.resize((446,20))
         image2 = ImageTk.PhotoImage(l2)
 
@@ -138,6 +138,7 @@ class Extra(tk.Toplevel):
         button3.place(x=70,y=820)
         button4 = tk.Button(cart, text='Proceed To Checkout', font=('inter', 14, 'bold'), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=32, pady=8)
         button4.place(x=370,y=820)
+        tk.open()
 
 root = tk.Tk()
 
