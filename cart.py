@@ -3,6 +3,10 @@ from PIL import Image, ImageTk
 from tkinter import ttk
 from tkinter import font
 
+def payment():
+    root.destroy()
+    import payment
+
 root = tk.Tk()
 
 root.title('Kiosk')
@@ -127,7 +131,7 @@ l4.place(x=0,y=770)
 
 button3 = tk.Button(root, text='BACK', font=('inter', 14, 'bold'), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=100, pady=8)
 button3.place(x=70,y=820)
-button4 = tk.Button(root, text='Proceed To Checkout', font=('inter', 14, 'bold'), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=32, pady=8)
+button4 = tk.Button(root, text='Proceed To Checkout', font=('inter', 14, 'bold'), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=32, pady=8, command= payment)
 button4.place(x=370,y=820)
 
 root.mainloop()
