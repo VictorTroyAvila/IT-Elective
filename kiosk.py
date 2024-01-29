@@ -1,8 +1,12 @@
 from tkinter import *
 import tkinter as tk
-from testfile import test
 from PIL import Image, ImageTk
 from tkinter import ttk
+from tkinter import font
+
+def cart():
+    root.destroy()
+    import cart
 
 root = tk.Tk()
 
@@ -184,7 +188,7 @@ quantity1.place(x=220,y=845)
 
 button1 = tk.Button(root, text='Cancel order', font=('inter', 14), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=26, pady=8)
 button1.place(x=320,y=830)
-button2 = tk.Button(root, text='Place order', font=('inter', 14), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=26, pady=8, command= switch)
+button2 = tk.Button(root, text='Place order', font=('inter', 14), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=26, pady=8, command=cart)
 button2.place(x=520,y=830)
 
 
@@ -258,5 +262,7 @@ price13 = tk.Label(root, text='₱145', background='WHITE',font=('Inter', 7, 'bo
 price13.place(x=500,y=675)
 price14 = tk.Label(root, text='₱120', background='WHITE',font=('Inter', 7, 'bold'),)
 price14.place(x=660,y=675)
+
+
 
 root.mainloop()
