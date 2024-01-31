@@ -7,6 +7,10 @@ def payment():
     root.destroy()
     import payment
 
+def back():
+    root.destroy()
+    import kiosk
+
 root = tk.Tk()
 
 root.title('Kiosk')
@@ -129,7 +133,7 @@ label20.place(x=380,y=665)
 l4 = tk.Label(root, width=700, height=1, bg='#13ab40')
 l4.place(x=0,y=770)
 
-button3 = tk.Button(root, text='BACK', font=('inter', 14, 'bold'), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=100, pady=8)
+button3 = tk.Button(root, text='Back', font=('inter', 14, 'bold'), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=100, pady=8, command= back)
 button3.place(x=70,y=820)
 button4 = tk.Button(root, text='Proceed To Checkout', font=('inter', 14, 'bold'), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=32, pady=8, command= payment)
 button4.place(x=370,y=820)

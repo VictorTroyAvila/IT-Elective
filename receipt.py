@@ -1,5 +1,9 @@
 import tkinter as tk
 
+def back():
+    root.destroy()
+    import kiosk
+
 root = tk.Tk()
 root.title('Kiosk')
 root.geometry('700x900')
@@ -54,4 +58,5 @@ for item in text_receipt:
         receipt_label = tk.Label(frame1, text=item, font=("Arial", 12, "normal"), bg='WHITE')
     receipt_label.pack()
 
+root.after(10000, back)
 root.mainloop()
