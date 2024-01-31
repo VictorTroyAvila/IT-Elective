@@ -6,9 +6,7 @@ from tkinter import font
 
 def cart():
     root.destroy()
-    import cart as crt
-
-    crt
+    import cart
 
 
 root = tk.Tk()
