@@ -3,10 +3,12 @@ import tkinter as tk
 from PIL import Image, ImageTk
 from tkinter import ttk
 from tkinter import font
+import cart
+
 
 def cart():
     root.destroy()
-    import cart
+    exec(cart)
 
 
 root = tk.Tk()
