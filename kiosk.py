@@ -57,37 +57,51 @@ for label in labels:
     label.bind('<Button-1>', lambda e, l=label: change_color(l))
 
 
+counter = tk.IntVar()
+def Click(event=None):
+    counter.set(counter.get() + 1)
+def DClick(event=None):
+     if counter.get() == 0:
+        counter.set(counter.get() + 0)
+     else:
+        counter.set(counter.get() - 1)
+def clear(even=None):
+    counter.set(counter.get() - counter.get())
+
 placeorder = tk.Label(root, text='PLACE ORDER - DINE IN', background='#13ab40',font=('Poppins', 10, 'bold'), width=700,padx=12,pady=4, anchor='w')
 placeorder.place(x=0,y=780)
 
 
 quantity = tk.Label(root, text='QUANTITY', background='#fab6fa',font=('Poppins', 10, 'bold'),)
-quantity.place(x=100,y=820)
+quantity.place(x=205,y=810)
 
 
 a17 = Image.open("D:\Documents\IT-Elective\pics\\plus.png")
 a17 = a17.resize((28,28))
 image17 = ImageTk.PhotoImage(a17)
 
-label17 = tk.Button(root, image = image17, borderwidth=0, relief='solid')
-label17.place(x=120,y=850)
+label17 = tk.Button(root, image = image17, borderwidth=0, relief='solid', command=Click)
+label17.place(x=270,y=840)
 
 a18 = Image.open("D:\Documents\IT-Elective\pics\\minus.png")
 a18 = a18.resize((28,28))
 image18 = ImageTk.PhotoImage(a18)
 
-label18 = tk.Button(root, image = image18, borderwidth=0, relief='solid')
-label18.place(x=160,y=850)
+label18 = tk.Button(root, image = image18, borderwidth=0, relief='solid', command=DClick)
+label18.place(x=180,y=840)
 
-quantity1 = tk.Label(root, text='01', background='WHITE',font=('Poppins', 10, 'bold'), borderwidth=1, relief='solid',padx=12, pady=8)
-quantity1.place(x=220,y=845)
+quantity1 = tk.Label(root, textvariable=counter, background='WHITE',font=('Poppins', 10, 'bold'), borderwidth=1, relief='solid',padx=12, pady=8)
+quantity1.place(x=220,y=838)
 
-button1 = tk.Button(root, text='Cancel Order', font=('Poppins', 14), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=26, pady=8)
-button1.place(x=320,y=830)
-button2 = tk.Button(root, text='Place Order', font=('Poppins', 14), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=26, pady=8, command=cart)
-button2.place(x=520,y=830)
+button1 = tk.Button(root, text='Cancel Order', font=('Poppins', 14), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=13, pady=8, command= clear)
+button1.place(x=20,y=830)
+button2 = tk.Button(root, text='Place Order', font=('Poppins', 14), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=13, pady=8, command= clear)
+button2.place(x=310,y=830)
 
-button = tk.Button(root, text='BACK', font=('Poppins', 12, 'bold'), background='#33691E', fg='white', cursor='hand2',borderwidth=0, padx=32, pady=2)
+label19 = tk.Label(root, font=('Poppins', 14), fg='white',borderwidth=0, padx=13, pady=8, width=19, height=3 )
+label19.place(x=455,y=813)
+
+button = tk.Button(root, text='CART', font=('Poppins', 12, 'bold'), background='#33691E', fg='white', cursor='hand2',borderwidth=0, padx=32, pady=2, command=cart)
 button.pack(side=tk.TOP,anchor=tk.NE, padx=10, pady=10)
 
 mydb = mysql.connector.connect(
