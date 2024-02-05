@@ -18,6 +18,28 @@ root.geometry('700x900')
 root.config(bg='#fab6fa')
 root.resizable(width=False, height=False)
 
+
+counter = tk.IntVar()
+def Click(event=None):
+    counter.set(counter.get() + 1)
+def DClick(event=None):
+     if counter.get() == 0:
+        counter.set(counter.get() + 0)
+     else:
+        counter.set(counter.get() - 1)
+
+
+counter2 = tk.IntVar()
+def Click2(event=None):
+    counter2.set(counter2.get() + 1)
+def DClick2(event=None):
+    if counter2.get() == 0:
+        counter2.set(counter2.get() + 0)
+    else:
+        counter2.set(counter2.get() - 1)
+
+
+
 pillow_image = Image.open("D:\Documents\IT-Elective\pics\one.png")
 pillow_image = pillow_image.resize((500,200))
 image = ImageTk.PhotoImage(pillow_image)
@@ -63,22 +85,22 @@ button1.place(x=150,y=453)
 button2 = tk.Button(root, text='Edit', font=('inter', 11, 'bold'), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=32, pady=4)
 button2.place(x=450,y=453)
 
-
 a18 = Image.open("D:\Documents\IT-Elective\pics\minus.png")
 a18 = a18.resize((28,28))
 image18 = ImageTk.PhotoImage(a18)
 
-label18 = tk.Label(root, image = image18, borderwidth=0, relief='solid')
+label18 = tk.Button(root, image = image18, borderwidth=0, relief='solid', command=DClick)
 label18.place(x=300,y=455)
 
-quantity1 = tk.Label(root, text='01', background='WHITE',font=('Inter', 10, 'bold'), borderwidth=1, relief='solid',padx=12, pady=4)
+quantity1 = tk.Label(root, textvariable=counter, background='WHITE',font=('Inter', 10, 'bold'), borderwidth=1, relief='solid',padx=12, pady=4)
 quantity1.place(x=335,y=456)
+
 
 a17 = Image.open("D:\Documents\IT-Elective\pics\plus.png")
 a17 = a17.resize((28,28))
 image17 = ImageTk.PhotoImage(a17)
 
-label17 = tk.Label(root, image = image17, borderwidth=0, relief='solid')
+label17 = tk.Button(root, image = image17, borderwidth=0, relief='solid', command=Click)
 label17.place(x=380,y=455)
 
 
@@ -111,22 +133,21 @@ button1.place(x=150,y=663)
 button2 = tk.Button(root, text='Edit', font=('inter', 11, 'bold'), background='#13ab40', fg='white', cursor='hand2',borderwidth=0, padx=32, pady=4)
 button2.place(x=450,y=663)
 
-
 a19 = Image.open("D:\Documents\IT-Elective\pics\minus.png")
 a19 = a19.resize((28,28))
 image19 = ImageTk.PhotoImage(a19)
 
-label19 = tk.Label(root, image = image19, borderwidth=0, relief='solid')
+label19 = tk.Button(root, image = image19, borderwidth=0, relief='solid',command=DClick2)
 label19.place(x=300,y=665)
 
-quantity1 = tk.Label(root, text='01', background='WHITE',font=('Inter', 10, 'bold'), borderwidth=1, relief='solid',padx=12, pady=4)
+quantity1 = tk.Label(root, textvariable=counter2, background='WHITE',font=('Inter', 10, 'bold'), borderwidth=1, relief='solid',padx=12, pady=4)
 quantity1.place(x=335,y=666)
 
 a20 = Image.open("D:\Documents\IT-Elective\pics\plus.png")
 a20 = a20.resize((28,28))
 image20 = ImageTk.PhotoImage(a20)
 
-label20 = tk.Label(root, image = image20, borderwidth=0, relief='solid')
+label20 = tk.Button(root, image = image20, borderwidth=0, relief='solid', command=Click2)
 label20.place(x=380,y=665)
 
 

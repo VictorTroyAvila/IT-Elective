@@ -69,14 +69,14 @@ a17 = Image.open("D:\Documents\IT-Elective\pics\\plus.png")
 a17 = a17.resize((28,28))
 image17 = ImageTk.PhotoImage(a17)
 
-label17 = tk.Label(root, image = image17, borderwidth=0, relief='solid')
+label17 = tk.Button(root, image = image17, borderwidth=0, relief='solid')
 label17.place(x=120,y=850)
 
 a18 = Image.open("D:\Documents\IT-Elective\pics\\minus.png")
 a18 = a18.resize((28,28))
 image18 = ImageTk.PhotoImage(a18)
 
-label18 = tk.Label(root, image = image18, borderwidth=0, relief='solid')
+label18 = tk.Button(root, image = image18, borderwidth=0, relief='solid')
 label18.place(x=160,y=850)
 
 quantity1 = tk.Label(root, text='01', background='WHITE',font=('Poppins', 10, 'bold'), borderwidth=1, relief='solid',padx=12, pady=8)
@@ -98,27 +98,25 @@ mydb = mysql.connector.connect(
 )
 
 def general():
-    Meals = mydb.cursor()
-    Meals.execute("SELECT Item FROM veryfastfood")
+    Gen = mydb.cursor()
+    Gen.execute("SELECT Item FROM veryfastfood")
 
     col=0
     row=0
-    for veryfastfood in Meals:
+    for veryfastfood in Gen:
         for j in range(len(veryfastfood)):
         
             btn = tk.Button(item_frame, text=veryfastfood[j], wraplength=100, padx=2, pady=2, height=4, width=18, bg='#fab6fa')
             btn.grid(column=col, row=row, sticky='news')
-
-        if col == 4:
+        if row == 6 and col == 4:
+           row = 2
+           col = 3
+        elif col == 4:
             col = 0
             row += 1
         else:
             col += 1
             root.grid_rowconfigure(row, uniform='rows')
-            if row == 6 and col == 4:
-                row = 2
-                col = 3
-                break
 
 def catFil(lbl_name):
     for widgets in item_frame.winfo_children():
